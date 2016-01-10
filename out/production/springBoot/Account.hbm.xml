@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="xmlBased.Account" table="account">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="accountNumber" type="string">
+            <column name="account_number"/>
+        </property>
+        <property name="money" type="java.lang.Integer">
+            <column name="money" />
+        </property>
+    </class>
+</hibernate-mapping>
